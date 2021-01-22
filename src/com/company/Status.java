@@ -1,2 +1,7 @@
-package com.company;public class Status {
+package com.company;
+
+public enum Status {
+    ROCK,
+    PAPER,
+    SCISSORS;
 }
