@@ -9,14 +9,16 @@ public enum Status {
 
         @Override
         public void choicePaper(Action a) throws Exception {
-            System.out.println("Оппонент выбрал бумагу(Paper). Вы проиграли. Очко в пользу Компьютера.");
             a.loseRound();
+            System.out.println("Оппонент выбрал бумагу(Paper). Вы проиграли. Очко в пользу Компьютера.");
+
         }
 
         @Override
         public void choiceScissors(Action a) throws Exception {
-            System.out.println("Оппонент выбрал ножницы(Scissors) А вы камень(Rock). Вы выйграли. Очко в пользу Игрока.");
             a.winRound();
+            System.out.println("Оппонент выбрал ножницы(Scissors) А вы камень(Rock). Вы выйграли. Очко в пользу Игрока.");
+
 
 
         }
@@ -24,8 +26,9 @@ public enum Status {
     PAPER{
         @Override
         public void choiceRock(Action a) throws Exception {
-            System.out.println("Оппонент выбрал камень(Rock). Вы выйграли. Очко в пользу Игрока.");
             a.winRound();
+            System.out.println("Оппонент выбрал камень(Rock). Вы выйграли. Очко в пользу Игрока.");
+
 
         }
 
@@ -36,21 +39,24 @@ public enum Status {
 
         @Override
         public void choiceScissors(Action a) throws Exception {
-            System.out.println("Оппонент выбрал ножницы(Scissors). Вы проиграли. Очко в пользу Компьютера.");
             a.loseRound();
+            System.out.println("Оппонент выбрал ножницы(Scissors). Вы проиграли. Очко в пользу Компьютера.");
+
         }
     },
     SCISSORS{
         @Override
         public void choiceRock(Action a) throws Exception {
-            System.out.println("Оппонент выбрал камень(Rock). Вы проиграли. Очко в пользу Компьютера.");
             a.loseRound();
+            System.out.println("Оппонент выбрал камень(Rock). Вы проиграли. Очко в пользу Компьютера.");
+
         }
 
         @Override
         public void choicePaper(Action a) throws Exception {
-            System.out.println("Оппонент выбрал бумагу(Paper). Вы выйграли. Очко в пользу Игрока.");
             a.winRound();
+            System.out.println("Оппонент выбрал бумагу(Paper). Вы выйграли. Очко в пользу Игрока.");
+
         }
 
         @Override
